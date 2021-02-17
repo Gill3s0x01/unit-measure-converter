@@ -3,19 +3,34 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Conversor de Unidade de Medidas</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <input type="number" id="metros" />
-    <input
-      type="button"
-      value="Converter"
-      id="btnConverter"
-      onclick="converter()"
-    />
+    <div class="alternative">
+      <h2 classe="input-converter">
+        Digite a dimensão desejada para conversão:
+      </h2>
+      <input type="number" id="metros" />
+      <input
+        type="button"
+        value="Converter"
+        id="btnConverter"
+        placeholder="Digite aqui a medida para conversão"
+        onclick="converter()"
+      />
 
-    <div id="res"></div>
+      <div id="res"></div>
+    </div>
 
     <script src="scripts.js"></script>
+
+    <section class="images">
+      <img src="assets/mobile.svg" alt="Mobile" />
+      <div class="circle"></div>
+    </section>
   </body>
 </html>
